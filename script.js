@@ -1,6 +1,11 @@
-document.getElementById("darkModeToggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
-document.getElementById("darkModeToggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
+// Mood Tracker Function
+function saveMood() {
+    let mood = document.getElementById("moodSelect").value;
+    localStorage.setItem("userMood", mood);
+    document.getElementById("moodHistory").innerText = "Your last mood: " + mood;
+}
+
+// Journal Saving Function
+function saveJournal() {
+    localStorage.setItem("journal", document.getElementById("journalText").value);
+}
