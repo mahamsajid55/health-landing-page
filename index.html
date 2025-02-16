@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo">🌿 Mindful</div>
         <nav>
@@ -18,12 +19,22 @@
         <button id="darkmodetoggle">🌙</button>
     </header>
     
-        
+    <!-- Hero Section -->
     <section id="hero">
-        <h2>Your mental health matters.</h2>
-        <button id="startjourney">Start Your Journey</button>
-        <a href=""></a>
-
+        <h1>Your Mental Health Matters</h1>
+        <p>Take a moment for yourself and start your journey to well-being.</p>
+        <a href="journey.html">
+            <button id="startJourney">Start Your Journey</button>
+        </a>
     </section>
+
+    <!-- Motivational Quotes Section -->
+    <section id="quote-section">
+        <h2>💙 Daily Motivation 💙</h2>
+        <p id="motivational-quote">"Your mental health is a priority."</p>
+        <button onclick="showRandomQuote()">💡 New Quote</button>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

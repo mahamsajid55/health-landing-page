@@ -1,58 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    text-align: center;
+}
+
 /* Header Styling */
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, #6a11cb, #2575fc);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: #2575fc;
+    padding: 15px 20px;
     color: white;
 }
 
-/* Logo */
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-/* Vertical Navigation Menu */
-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    margin: 0 10px;
     font-weight: bold;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
-    text-align: center;
-    flex-direction: column;
-}
-nav a:hover {
-    background: rgba(255, 255, 255, 0.4);
 }
 
-/* Dark Mode Button */
-#darkmodetoggle {
-    margin-top: 15px;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
+button {
+    background: #ff9800;
     color: white;
-    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
-#darkmodetoggle:hover {
-    background: rgba(255, 255, 255, 0.4);
+
+button:hover {
+    background: #e68900;
 }
+
+/* Hero Section */
+#hero {
+    padding: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Quote Section */
+#quote-section {
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -64,27 +77,4 @@ nav a:hover {
         flex-direction: column;
         margin-top: 10px;
     }
-}
-
-#tips{
-    margin: 50px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    background: #e3f2fd;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-#breathingCircle {
-    width: 100px; height: 100px;
-    background: lightblue;
-    border-radius: 50%;
-    animation: breathing 6s infinite ease-in-out;
-}
-@keyframes breathing {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.5); }
-    100% { transform: scale(1); }
 }
