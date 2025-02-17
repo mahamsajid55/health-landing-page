@@ -32,24 +32,6 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Dark Mode Button */
-#darkmodetoggle {
-    background: transparent;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-#darkmodetoggle:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-
-
-
 
 /* Box Styling */
 .content-box {
@@ -89,6 +71,53 @@ nav a:hover {
 #exploreMore:hover {
     background: #1e5cd6;
 }
+
+.journal-entries{
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #6b4d4d;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Individual Journal Entry */
+.entry {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #2575fc; /* Blue accent */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Date Styling */
+.entry strong {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Text Styling */
+.entry p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+    white-space: pre-wrap; /* Keeps line breaks */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .journal-entries {
+        width: 90%;
+    }
+}
+
+
 /* Back Button */
 .back-button {
     display: inline-block;

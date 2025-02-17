@@ -1,0 +1,29 @@
+// Function to save mood to local storage
+function saveMood() {
+    const mood = document.getElementById("moodSelect").value;
+    let moods = JSON.parse(localStorage.getItem("moods")) || [];
+    moods.push({ date: new Date().toLocaleDateString(), mood: mood });
+    localStorage.setItem("moods", JSON.stringify(moods));
+    displayMoodHistory();
+}
+
+// Function to display saved mood history
+function displayMoodHistory() {
+    let moods = JSON.parse(localStorage.getItem("moods")) || [];
+    let historyText = moods.map(entry => `${entry.date}: ${entry.mood}`).join("<br>");
+    document.getElementById("moodHistory").innerHTML = historyText;
+}
+
+// Function to save journal entry
+function saveJournal() {
+    const text = document.getElementById("journalText").value;
+    let journals = JSON.parse(localStorage.getItem("journals")) || [];
+    journals.push({ date: new Date().toLocaleDateString(), text: text });
+    localStorage.setItem("journals", JSON.stringify(journals));
+    alert("Journal entry saved!");
+}
+
+// Load saved data on page load
+window.onload = function () {
+    displayMoodHistory();
+};
