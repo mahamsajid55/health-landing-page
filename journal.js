@@ -27,3 +27,42 @@ function saveJournal() {
 window.onload = function () {
     displayMoodHistory();
 };
+
+
+// Function to save journal entry
+function saveJournal() {
+    const text = document.getElementById("journalText").value;
+    if (!text.trim()) {
+        alert("Please write something before saving!");
+        return;
+    }
+
+    let journals = JSON.parse(localStorage.getItem("journals")) || [];
+    journals.push({ date: new Date().toLocaleDateString(), text: text });
+    localStorage.setItem("journals", JSON.stringify(journals));
+
+    document.getElementById("journalText").value = ""; // Clear text area
+    displayJournalEntries(); // Update displayed entries
+}
+
+// Function to display saved journal entries
+function displayJournalEntries() {
+    let journals = JSON.parse(localStorage.getItem("journals")) || [];
+    let journalList = document.getElementById("journalEntries");
+    journalList.innerHTML = "";
+
+    journals.forEach(entry => {
+        let div = document.createElement("div");
+        div.classList.add("entry");
+        div.innerHTML = `<strong>${entry.date}</strong><p>${entry.text}</p>`;
+        journalList.appendChild(div);
+    });
+}
+
+// Load saved data when the page loads
+window.onload = function () {
+    displayJournalEntries();
+};
+
+
+

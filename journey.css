@@ -72,49 +72,53 @@ nav a:hover {
     background: #1e5cd6;
 }
 
-.journal-entries{
+.journal-entries {
     width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #6b4d4d;
+    background: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    text-align: center;
 }
 
-/* Individual Journal Entry */
-.entry {
-    background: white;
-    padding: 15px;
+.journal-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
     margin: 10px 0;
-    border-left: 5px solid #2575fc; /* Blue accent */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    text-align: left;
 }
 
-/* Date Styling */
-.entry strong {
-    display: block;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 5px;
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Text Styling */
-.entry p {
-    font-size: 1em;
-    color: #555;
-    margin: 0;
-    white-space: pre-wrap; /* Keeps line breaks */
+.delete-btn:hover {
+    background: #d93636;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .journal-entries {
-        width: 90%;
-    }
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #2d53bd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #89a2e7;
 }
 
 
