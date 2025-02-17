@@ -12,38 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00796b;
-    color: white;
-    padding: 15px 30px;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
-}
-
-/* General Page Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    text-align: center;
-}
-
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ff9800; /* Orange theme for Yoga */
+    background: linear-gradient(to right, #00796b, #1a2e1b);
     color: white;
     padding: 15px 30px;
 }
@@ -73,7 +42,7 @@ nav a {
 
 /* Section Heading */
 .yoga-container h2 {
-    color: #ff9800;
+    color: #00796b;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -95,7 +64,7 @@ nav a {
 
 .yoga-pose h3 {
     font-size: 1.5em;
-    color: #ff9800;
+    color: #00796b;
     margin-top: 10px;
 }
 
