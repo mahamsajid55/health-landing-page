@@ -78,3 +78,36 @@ button:hover {
         margin-top: 10px;
     }
 }
+
+
+footer {
+    background: #00796b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

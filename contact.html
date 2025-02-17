@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <section id="contact">
-     <h1>Contact Me</h1>
-     <p>Have a project in mind or just want to say hi? Let's connect!</p>
-    
-     <form action="#" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="submit-btn">Send Message</button>
-     </form>
+        <div class="contact-box">
+            <h1>Contact Me</h1>
+            <p>Have a project in mind or just want to say hi? Let's connect!</p>
 
-     <div class="social-links">
-        <a href="https://github.com/mahamsajid55" target="_blank"><img src="github.png" alt="GitHub"</a>
-        <a href="" target="_blank"><img src="" alt="instagram"</a>
-        <a href="" target="_blank"><img src="" alt="email"</a>
-      </div>
+            <form onsubmit="redirectToThankYou(event)" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
 
-      <p class="location">📍 Biolbao,Spain  | 🕒 Available in [Your Time Zone]</p>
+            <div class="social-links">
+                <a href="https://github.com/mahamsajid55" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+                <a href="https://instagram.com/yourhandle" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="mailto:youremail@example.com">
+                    <img src="email.png" alt="Email">
+                </a>
+            </div>
 
-       
-      <a href="index.html" class="back-button">← Back to Home</a>
-      
+            <p class="location">📍 Bilbao, Spain | 🕒 Available in [Your Time Zone]</p>
+            <a href="index.html" class="back-button">← Back to Home</a>
+        </div>
     </section>
-      <script src="contact.js"></script>
 
-    </body>
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>🌿 Mindful &copy; 2025 | All Rights Reserved</p> 
+    </footer>
+
+    <script>
+        function redirectToThankYou(event) {
+            event.preventDefault(); // Prevent form from actually submitting
+            window.location.href = "thankyou.html"; // Redirect to Thank You page
+        }
+    </script>
+</body>
 </html>
