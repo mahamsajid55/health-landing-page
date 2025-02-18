@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #00796b, #1a2e1b);
+    background: linear-gradient(to right, #0ea190, #3e6f8b);
 
     padding: 15px 20px;
     color: white;
