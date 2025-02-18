@@ -1,51 +1,69 @@
+
 /* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #0ea190, #3e6f8b);
+    background: rgba(14, 161, 144, 0.8); /* Semi-transparent */
+    padding: 15px 20px;
     color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* Logo Styling */
-.logo img {
-    width: 50px;  
-    height: auto;  
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Navigation Menu */
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #ffeb3b;
+}
+
+/* Updated Navigation Styling */
 nav {
     display: flex;
     gap: 20px;
-}
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: background 0.3s ease;
-    border-radius: 5px;
-}
-nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    margin-right: 30px; /* Moves the menu slightly to the right */
 }
 
-/* Dark Mode Button */
-#darkmodetoggle {
-    background: transparent;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
+nav a {
     color: white;
-    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 15px;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
-#darkmodetoggle:hover {
-    background: rgba(255, 255, 255, 0.2);
+
+nav a:hover {
+    background: #ffeb3b;
+    color: #333;
+    transform: translateY(-3px);
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -59,7 +77,6 @@ nav a:hover {
     }
 }
 
-
 /* Main Section Styling */
 .main-container {
     width: 80%;
@@ -70,6 +87,7 @@ nav a:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     text-align: center;
+    margin-top: 7rem;
 }
 
 
@@ -88,74 +106,48 @@ nav a:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
-
-/* Bigger Past Journal Button */
-.past-journal {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 25px; 
-    background: #2575fc;
-    color: white;
-    font-size: 1.3em; 
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px; 
-    transition: background 0.3s ease, transform 0.2s ease-in-out;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Hover Effect */
-.past-journal:hover {
-    background: #1e5cd6;
-    transform: scale(1.08); 
-}
-
-/* Active Click Effect */
-.past-journal:active {
-    transform: scale(0.96);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .past-journal {
-        padding: 12px 20px; 
-        font-size: 1.2em;
-    }
-}
-
-
-/* Button Styling */
-button {
-    background: #2575fc;
-    color: white;
-    padding: 10px 15px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.past-container {
+    text-align: center;
     margin-top: 10px;
-    transition: background 0.3s ease;
 }
 
-button:hover {
-    background: #1e5cd6;
+.past-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background: #2d53bd;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.past-button:hover {
+    background: #89a2e7;
+    transform: scale(1.05);
 }
 
 /* Back Button */
 .back-button {
-    display: inline-block;
-    margin-top: 20px;
+    display: block;
+    margin: 40px auto; /* Centers it */
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
     padding: 10px 15px;
     background: #2d53bd;
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 .back-button:hover {
     background: #89a2e7;
 }
+
+
 footer {
     background: #00796b;
     color: white;
