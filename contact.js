@@ -1,3 +1,12 @@
+//hamburgesa//
+function toggleMenu() {
+    let nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show-menu");
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".contact-form");
 

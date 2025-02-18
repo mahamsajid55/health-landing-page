@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="logo">
-            <img src="images/mindful.png" alt="Mindful Logo"> <!-- Add your logo image -->
+            <img src="images/mindful.png" alt="Mindful Logo">
         </div>
-        <nav>
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
             <a href="index.html">Home</a>
             <a href="journal.html">Journal</a>
             <a href="tip.html">Tips</a>
             <a href="contact.html">Contact</a>
+            <a href="index.html" class="back-option">← Back</a> <!-- Back Button -->
         </nav>
- 
     </header>
+   
     
     <!-- Hero Section -->
     <section id="hero">
@@ -37,17 +43,33 @@
         <button onclick="showRandomQuote()">💡 New Quote</button>
     </section>
 
-<footer>
-        <div class="social-icons">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Promoting mental well-being through awareness and self-care.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="tip.html">Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <p2>🌿 Mindful &copy; 2025 | All Rights Reserved</p2> 
-
-</footer>
-
+        <p class="footer-bottom">&copy; 2025 Mindful | All rights reserved</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -8,19 +8,24 @@
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="images/mindful.png" alt="Mindful Logo"> <!-- Add your logo image -->
+            <img src="images/mindful.png" alt="Mindful Logo">
         </div>
-        <nav>
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
             <a href="index.html">Home</a>
             <a href="journal.html">Journal</a>
             <a href="tip.html">Tips</a>
             <a href="contact.html">Contact</a>
+            <a href="index.html" class="back-option">← Back</a> <!-- Back Button -->
         </nav>
-
     </header>
+    
     
     <!-- Single Box Section -->
     <section class="content-box">
@@ -32,14 +37,23 @@
     
     <footer>
         <div class="social-icons">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook+.com" target="_blank">
+                <img src="images/face-book.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/teitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
         </div>
     </div>
     <p>🌿 Mindful &copy; 2025 | All Rights Reserved</p> 
 
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

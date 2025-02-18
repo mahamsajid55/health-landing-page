@@ -1,3 +1,11 @@
+//hamburgesa//
+function toggleMenu() {
+    let nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show-menu");
+}
+
+
+
 // Mood Tracker Function
 function saveMood() {
     let mood = document.getElementById("moodSelect").value;
@@ -60,3 +68,4 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
 });
 
 // Dark Mode CSS (to be added in CSS file)
+

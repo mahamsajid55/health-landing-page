@@ -1,3 +1,11 @@
+//hamburgesa//
+function toggleMenu() {
+    let nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show-menu");
+}
+
+
+
 // Function to save mood to local storage
 function saveMood() {
     const mood = document.getElementById("moodSelect").value;
