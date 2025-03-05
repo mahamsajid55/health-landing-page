@@ -1,3 +1,10 @@
+//hamburgesa//
+function toggleMenu() {
+    let nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show-menu");
+}
+
+
 document.getElementById("exploreMore").addEventListener("click", function() {
     const extraContent = document.getElementById("extraContent");
 
