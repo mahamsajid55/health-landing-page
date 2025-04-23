@@ -8,23 +8,23 @@
 
 ---
 
-## 🧘‍♀️ About the Project
+##  About the Project
 
 This project is a simple mental health landing page that promotes well-being through calm design and useful features. Whether you're looking to stretch, write out your thoughts, or just get inspired, this page is here for you.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🌟 **Daily Motivational Quotes** – Randomly served positive messages
-- 🧘 **Yoga Exercise Section** – Beginner-friendly poses to stretch & breathe
-- 📝 **Journaling Section** – Write your thoughts in a private space
-- 📊 **Mood Tracker** – Track how you're feeling over time (optional/future)
-- 🎨 **Minimal, Calming UI** – Soft colors and user-friendly layout
+-  **Daily Motivational Quotes** – Randomly served positive messages
+-  **Yoga Exercise Section** – Beginner-friendly poses to stretch & breathe
+-  **Journaling Section** – Write your thoughts in a private space
+-  **Mood Tracker** – Track how you're feeling over time (optional/future)
+-  **Minimal, Calming UI** – Soft colors and user-friendly layout
 
 ---
 
-## 💻 Built With
+##  Built With
 
 - **HTML5** – Structure of the website
 - **CSS3**   – Styling and layout (responsive, calming design)
@@ -51,7 +51,7 @@ License
 This project is licensed under the MIT License.
 See LICENSE for details.
 
-🙋 Contact
+ Contact
 
 Created with care by Maham Sajid
 mahamsajid450@gmail.com
